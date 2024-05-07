@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+	background-color: #fff;
+	color: #000;
+	font-size: 18px; 
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.main{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.btn{
+	color: #0A0A09;
+	background-color: #FDAF64;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 12px;
+	font-weight: bolder;
+}
+
+.btn:hover{
+	background-color: #FF7729;
+}
+
+@media screen and (max-width: 420px) {
+	.main{
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+}

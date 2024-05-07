@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DiscoverWander | Туристична агенція</title>
+<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/navbar.css">
+<link rel="stylesheet" href="./css/main-page.css">
+<link rel="stylesheet" href="./css/offers-page.css">
+<link rel="stylesheet" href="./css/response.css">
+<link rel="stylesheet" href="./css/gallery.css">
+<link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="./css/modal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap">
+
+<style>
+
+</style>
+</head>
+<body>
+<div id="main" class="main">
+<nav class="navbar">
+  <a class="navbar-brand" onclick="scrollToID('main')">
+    <img class="logo" src="./img/logo.png" alt="Logo">
+	<img class="title" src="./img/logo-title.png" alt="Logo title">
+  </a>
+  <div class="navbar-menu">
+    <div class="navbar-menu-item">
+      <a onclick="scrollToID('main')">Головна</a>
+    </div>
+    <div class="navbar-menu-item">
+      <a onclick="scrollToID('offers')">Маршрути і програми</a>
+    </div>
+    <div class="navbar-menu-item">
+      <a onclick="scrollToID('responses')">Відгуки</a>
+    </div>
+	<div class="navbar-menu-item">
+      <a onclick="scrollToID('gallery')">Галерея</a>
+    </div>
+  </div>
+  <div class="navbar-toggle" onclick="toggleMenu()">
+    &#9776;
+  </div>
+</nav>
+
+<div class="container-main">
+  <h1>Туристична агенція "DiscoverWander"</h1>
+  <div class="carousel">
+	<button class="prev" onclick="prevSlide()">&#10094;</button>
+	<img class="prev-slide" src="./img/main_img2.jpg" alt="Previous Image">
+	<img class="current-slide" src="./img/main_img1.jpg" alt="Image 1">
+	<img class="next-slide" src="./img/main_img3.jpg" alt="Next Image">
+	<button class="next" onclick="nextSlide()">&#10095;</button>
+  </div>
+  <div class="text-block">
+    <p>"DiscoverWander" - туристична агенція, що пропонує незабутні пригоди та дослідження унікальних місць. Наші індивідуальні маршрути та екскурсії дозволять Вам відкрити нові горизонти.</p>
+    <button class="btn btn-main-page" onclick="scrollToID('offers')">Переглянути програми</button>
+  </div>
+</div>
+
+<div class="container-offers" id="offers">
+	<h1>Маршрути та програми</h1>
+	<div class="container-intro-offers">
+		<div class="content-intro-offers">
+			<p>З "DiscoverWander" ви зможете відправитися на екзотичні експедиції, підкорювати вершини гір, досліджувати загадкові місця і занурюватися у культуру різних народів. Наші експерти готові забезпечити вам відмінне обслуговування та підготувати програму, яка відповідає вашим інтересам та прагненням.</p>
+			<p>Довірте нам свої мрії про подорожі, і ми зробимо все можливе, щоб зробити їх реальністю. З "DiscoverWander" відкрийте для себе світ нових вражень та незабутніх пригод.</p>
+		</div>
+		<div class="main-image-offers">
+			<img src="./img/road.jpg" alt="Photo">
+		</div>
+	</div>
+	<div class="catalog-offers">
+	<h1>Популярні програми</h1>
+	<div class="catalog-offer">
+		<div class="catalog-offer-head">
+			<h2>Велосипедна експедиція по Долині Смерті "Пустеля на двох колесах"</h2>
+		</div>
+		<div class="catalog-offer-body">
+		<div class="catalog-offer-info">
+			<p>Перевірте свої межі в цій захоплюючій велосипедній експедиції по Долині  Смерті в США. Вирушайте у відважну подорож через дикі пустелі, відчуйте  екстремальний адреналін під час подолання безлічі піщаних дюн та піщаних  стежок. Велосипедна експедиція "Пустеля на двох колесах" стане справжним випробуванням вашої витривалості та вольової сили.</p>
+			<div class="catalog-offer-info-details">
+				<p class="price">тривалість: <span class="bold-txt">5 днів</span></p>
+				<p class="price">ціна (грн.): <span class="bold-txt">32 000 на людину</span></p>
+				<button class="btn modal-btn" data-default-value="1">Замовити програму</button>
+			</div>
+		</div>
+		<div class="catalog-offer-image">
+			<img src="./img/places/place1.jpg" alt="Place1">
+		</div>
+		</div>
+	</div>
+	<div class="catalog-offer">
+		<div class="catalog-offer-head">
+			<h2>Експедиція на вершину Кіліманджаро "Піднімайся вище"</h2>
+		</div>
+		<div class="catalog-offer-body">
+		<div class="catalog-offer-info">
+			<p>Мрієте про підкорення вершини? Приєднуйтеся до нас на експедицію на  найвищу гору Африки - Кіліманджаро. Разом із нашими досвідченими гідами  ви пройдете трасами різної складності, насолоджуючись дикими краєвидами  та долаючи власні межі. Піднімайтеся вище разом з програмою "Піднімайся вище".</p>
+			<div class="catalog-offer-info-details">
+				<p class="price">тривалість: <span class="bold-txt">10 днів</span></p>
+				<p class="price">ціна (грн.): <span class="bold-txt">42 000 на людину</span></p>
+				<button class="btn modal-btn" data-default-value="2">Замовити програму</button>
+			</div>
+		</div>
+		<div class="catalog-offer-image">
+			<img src="./img/places/place2.jpg" alt="Place1">
+		</div>
+		</div>
+	</div>
+	<div class="catalog-offer">
+		<div class="catalog-offer-head">
+			<h2>Походження Амазонки: Експедиція у джунглях Південної Америки</h2>
+		</div>
+		<div class="catalog-offer-body">
+		<div class="catalog-offer-info">
+			<p>Відправтеся на справжню пригоду в серце дикої природи у джунглях  Амазонки. Вас чекають захоплюючі екскурсії на каное, зустрічі з  місцевими племенами, джунглеві треки та безліч неймовірних вражень.  Почуйте дух пригоди та відкрийте для себе красу дикої природи разом із  "Походженням Амазонки".</p>
+			<div class="catalog-offer-info-details">
+				<p class="price">тривалість: <span class="bold-txt">7 днів</span></p>
+				<p class="price">ціна (грн.): <span class="bold-txt">56 000 на людину</span></p>
+				<button class="btn modal-btn" data-default-value="3">Замовити програму</button>
+			</div>
+		</div>
+		<div class="catalog-offer-image">
+			<img src="./img/places/place3.jpg" alt="Place1">
+		</div>
+		</div>
+	</div>
+	<div class="catalog-offer">
+		<div class="catalog-offer-head">
+			<h2>Екзотична пригода в Тайланді "Таємниці Східної культури"</h2>
+		</div>
+		<div class="catalog-offer-body">
+		<div class="catalog-offer-info">
+			<p>Приготуйтеся до захоплюючого відкриття таємниць давньої східної культури   в захоплюючому турі в Таїланді. Вирушайте у захоплюючу подорож, де вас чекає відвідування старовинних храмів, діждьових лісів, екзотичних  пляжів  та місцевих ринків. Відчуйте справжню магію Сходу разом із  "Таємницями Східної культури".</p>
+			<div class="catalog-offer-info-details">
+				<p class="price">тривалість: <span class="bold-txt">10 днів</span></p>
+				<p class="price">ціна (грн.): <span class="bold-txt">42 000 на людину </span></p>
+				<button class="btn modal-btn" data-default-value="4">Замовити програму</button>
+			</div>
+		</div>
+		<div class="catalog-offer-image">
+			<img src="./img/places/place4.jpg" alt="Place1">
+		</div>
+		</div>
+	</div>
+	<button class="btn additional-button modal-btn" data-default-value="0">Замовити іншу програму</button>
+	</div>
+</div>
+
+<section class="response-section" id="responses">
+  <h1 class="response-title">Відгуки</h1>
+  <div class="response-text-block">
+    <p>Відгуки наших задоволених клієнтів - це найкращий свідчення відмінності нашої роботи. Кожен відгук - це історія успіху, що запам'ятається нам назавжди. Ми пишаємося кожним з них, адже вони підтверджують нашу місію - зробити ваші подорожі незабутніми та безпечними.</p>
+	<p>Відгуки наших клієнтів - це більше, ніж просто слова. Вони - це вияв зауваження та вдячності за наші експертність, відданість та професіоналізм. Ми завжди прагнемо перевершити очікування наших клієнтів, і ці відгуки підтверджують, що ми на правильному шляху.</p>
+	<p>Дозвольте нам поділитися цими враженнями з вами. Ми впевнені, що вони так само змінять ваше бачення подорожей, як змінили наше.</p>
+	<p>Приєднуйтеся до нашої спільноти задоволених мандрівників та дайте нам можливість перевершити ваші очікування!</p>
+  </div>
+  <div class="response-row">
+    <div class="response-column">
+      <div class="response-block">
+        <img src="./img/response/profile1.jpg" alt="Profile1">
+		<p class="author-response">Марина К.</p>
+		<img class="rating" src="./img/response/rating.png" alt="Rating">
+        <p class="response-text">Подорож з "DiscoverWander" була просто незабутньою! Я відвідала так багато  захоплюючих місць, які навіть не могла уявити. Велике спасибі за чудову  організацію та неперевершені враження!</p>
+      </div>
+    </div>
+    <div class="response-column">
+      <div class="response-block">
+        <img src="./img/response/profile2.jpg" alt="Profile2">
+		<p class="author-response">Олексій Т.</p>
+		<img class="rating" src="./img/response/rating.png" alt="Rating">
+        <p class="response-text">Не можу не висловити свою вдячність "DiscoverWander" за незабутню подорож до  Азії! Кожен момент був наповнений пригодами та новими враженнями. Я  відчував себе повністю захищеним на кожному етапі подорожі.</p>
+      </div>
+    </div>
+    <div class="response-column">
+      <div class="response-block">
+	  	<img src="./img/response/profile3.jpg" alt="Profile3">
+		<p class="author-response">Ірина Л.</p>
+        <img class="rating" src="./img/response/rating.png" alt="Rating">
+        <p class="response-text">Враження від моєї подорожі з "DiscoverWander" просто неймовірні! Вибір  маршруту, організація, екскурсії - все було на вищому рівні. Я впевнена,  що ще не раз скористаюся послугами цієї агенції!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gallery-page" id="gallery">
+	<h1>Галерея</h1>
+	<div class="controls controls-gallery">
+		<div class="controls-body">
+		<button class="btn active" data-index="0">Місця призначення</button>
+		<button class="btn" data-index="1">Готелі</button>
+		<button class="btn" data-index="2">Місцева кухня</button>
+		</div>
+	</div>
+	<div class="carousel gallery">
+		<button class="prev" onclick="prevGallerySlide()">&#10094;</button>
+		<img class="prev-slide" id="prev-slide-gallery" alt="Previous Image">
+		<img class="current-slide" id="current-slide-gallery" alt="Image 1">
+		<img class="next-slide" id="next-slide-gallery" alt="Next Image">
+		<button class="next" onclick="nextGallerySlide()">&#10095;</button>
+	</div>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="footer-info">
+  <div class="footer-column">
+    <a class="navbar-brand" onclick="scrollToID('main')">
+		<ul>
+		<li><img class="title" src="./img/logo-title.png" alt="Logo title"></li>
+		<li><img class="logo" src="./img/logo.png" alt="Logo"></li>
+		</ul>
+	</a>
+  </div>
+  <div class="footer-column">
+    <ul>
+      <li><a onclick="scrollToID('main')">Головна</a></li>
+      <li><a onclick="scrollToID('offers')">Програми</a></li>
+      <li><a onclick="scrollToID('responses')">Відгуки</a></li>
+      <li><a onclick="scrollToID('gallery')">Галерея</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <p>Наша адреса:</p>
+	<p>Україна, м. Суми, вул. Шевченко, 115</p><br>
+    <p>e-mail:</p>
+	<p>discover_wanderer@ukr.net</p>
+  </div>
+  <div class="footer-column">
+    <p>Телефон:</p>
+	<p>095 555 95 33</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/"><img src="./img/media/instagram.svg" alt="Instagram"></a>
+      <a href="https://web.telegram.org"><img src="./img/media/telegram.svg" alt="Telegram"></a>
+      <a href="https://facebook.com/"><img src="./img/media/facebook.svg" alt="Facebook"></a>
+    </div>
+  </div>
+  </div>
+  <p>© 2024 агентство "DiscoverWander". Усі права захищені.</p>
+</footer>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+	<div class="modal-form">
+    <h2>Залишайте власні заявки для подорожей або обирайте програми агенства</h2>
+	<div class="controls controls-modal">
+		<div class="controls-body controls-body-modal">
+		<button class="controls-modal-btn btn active" id="modal-program" data-index="0">Програми від агенства</button>
+		<button class="controls-modal-btn btn" id="modal-own-program" data-index="1">Власна програма</button>
+		</div>
+	</div>
+    <form id="orderForm">
+      <div class="form-group">
+        <label for="name">Iм’я</label>
+        <input type="text" id="name" name="name" placeholder="Введіть Ваше ім'я" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" placeholder="Введіть Ваш телефон" required>
+      </div>
+
+      <div class="form-group" id="select-group">
+        <label for="defaultOptionSelect">Програми</label>
+        <select id="defaultOptionSelect" name="programs">
+          <option value="1">Велосипедна експедиція по Долині Смерті "Пустеля на двох колесах"</option>
+          <option value="2">Експедиція на вершину Кіліманджаро "Піднімайся вище"</option>
+          <option value="3">Походження Амазонки: Експедиція у джунглях Південної Америки</option>
+		  <option value="4">Екзотична пригода в Тайланді "Таємниці Східної культури"</option>
+        </select>
+      </div>
+	  
+	  <div class="form-group" id="textarea-group" style="display: none;">
+        <label for="own-program">Власна програма</label>
+        <textarea id="own-program" name="own-program" placeholder="Введіть текст власних побажань для подорожі....."></textarea>
+	  </div>
+
+      <button class="btn btn-modal-form" type="submit" id="submitBtn">Замовити</button>
+    </form>
+    <p class="modal-info">Залиште свої дані і ми вам передзвонимо!</p>
+  </div>
+</div>
+
+<div id="myModalSuccess" class="modal-success">
+  <div class="modal-content-success">
+    <span class="close-success">&times;</span>
+    <div class="content-wrapper">
+      <div class="text-content success-text-content">
+		<h1>Дякуємо за заявку!</h1>
+		<p>Наш менеджер зв'яжеться з вами найближчим часом</p>
+	  </div>
+	  <img src="./img/success.png" alt="Success" class="success-image">
+    </div>
+  </div>
+</div>
+</div>
+<script>
+
+</script>
+<script src="./js/nav.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/gallery.js"></script>
+<script src="./js/modal.js"></script>
+</body>
+</html>

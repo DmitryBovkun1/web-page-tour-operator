@@ -1,0 +1,75 @@
+.gallery-page
+{
+  text-align: center;
+}
+
+.gallery-page > * {
+  margin-bottom: 36px;
+}
+
+.controls {
+    margin: 0 auto 36px;
+}
+
+.controls-body
+{
+	display: inline-block; 
+	width: auto; 
+	background-color: #FDAF64;
+    border-radius: 8px;
+    margin: 0 5px 36px;
+}
+
+.controls .btn {
+	margin-right: 10px; 
+	position: relative;
+	text-decoration: underline; 
+	color: #ffffff;
+    background-color: #FDAF64;
+    font-weight: normal;
+}
+
+.controls .btn:hover {
+    text-decoration: none;
+    color: #003EBC;
+}
+
+.controls .btn:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  width: 1px;
+  height: 100%;
+  background-color: black;
+  transform: translateY(-50%);
+}
+
+.controls .btn:not(:first-child) {
+  margin-left: -5px;
+}
+
+.controls .btn.active {
+  color: #000000;
+  text-decoration: none;
+  cursor: default;
+}
+
+.controls .btn.active:disabled {
+  pointer-events: none;
+}
+
+.controls .current {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 545px) {
+    .controls-body {
+        margin: 0;
+    }
+
+    .controls .btn{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}

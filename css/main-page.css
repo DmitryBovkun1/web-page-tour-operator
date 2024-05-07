@@ -1,0 +1,161 @@
+.container-main h1, .container-offers h1
+{
+  font-size: 48px;
+}
+
+.btn-main-page{
+	padding: 12px 55px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1120px;
+  text-align: center;
+  margin: 0 auto; 
+}
+
+.current-slide-container {
+  flex: 1;
+}
+
+.current-slide {
+  margin: 0 auto;
+  width: 410px;
+  height: 310px;
+  border-radius: 16px; 
+}
+
+.prev-slide,
+.next-slide {
+  max-width: 290px;
+  max-height: 250px;
+  border-radius: 16px; 
+}
+
+.prev,
+.next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 36px;
+  background-color: #fff;
+  color: #000000;
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  font-weight: lighter;
+}
+.prev:hover,
+.next:hover {
+  font-weight: bold;
+}
+
+.prev:active,
+.next:active {
+  background-color: #fff;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.container-main {
+  margin-top: 70px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.container-main > * {
+  margin-bottom: 23px;
+}
+
+.text-block {
+  text-align: center; 
+  margin-top: 20px;
+}
+
+.text-block p {
+  font-size: 20px;
+  max-width: 540px;
+  margin: 0 auto 30px;
+}
+
+.text-block button {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1128px) {
+  .carousel {
+    max-width: 100%;
+  }
+
+  .current-slide, .prev-slide, .next-slide {
+    max-width: 33%;
+    border-radius: 12px;
+  }
+
+  .current-slide {
+    height: 220px;
+  }
+
+  .prev-slide, .next-slide {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-main {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .container-main h1, .container-offers h1 {
+    font-size: 36px;
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .current-slide{
+    max-width: 90%;
+  }
+
+  .current-slide img {
+    width: 100vw;
+    height: auto;
+  }
+
+  .prev-slide, .next-slide {
+    display: none;
+  }
+
+  .prev, .next {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+  }
+
+  .text-block p {
+    font-size: 24px;
+    max-width: 90%;
+  }
+
+  .navbar-brand img.logo
+  {
+    width: 50px;
+  }
+
+  .navbar-brand img.title{
+    width: 200px;
+  }
+}
